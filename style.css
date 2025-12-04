@@ -1,0 +1,67 @@
+/* Clean engineering/minimalist + navy blue accent */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0a2342;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0a2342;
+  font-size: 1.25rem;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+.section {
+  padding: 3rem 10%;
+}
+
+h1, h2, h3, h4 {
+  color: #0a2342;
+  font-weight: 700;
+}
+
+.project-card {
+  border: 1px solid #d0d0d0;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  color: #0a2342;
+}
