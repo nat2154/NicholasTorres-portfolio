@@ -53,9 +53,10 @@ h1, h2, h3, h4 {
 }
 
 .project-img {
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 1rem;
+  width: 60%;
+  display: block;
+  margin: 0 auto 2rem auto;
+  order-radius: 6px;
 }
 
 footer {
