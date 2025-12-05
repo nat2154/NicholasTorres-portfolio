@@ -14,10 +14,11 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2.5rem;
   margin-top: 1rem;
 }
+
 
 nav a {
   text-decoration: none;
@@ -35,16 +36,20 @@ nav a:hover {
 }
 
 h1, h2, h3, h4 {
-  color: #0a2342;
+  color: #ffffff;      /* or #f0f0e6 if you want off-white */
   font-weight: 700;
+  text-align: left;     /* ensure heading text stays left-aligned */
 }
 
+
 .project-card {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #2c3a55; 
+  background: #22304c;
   padding: 2rem;
   margin-bottom: 3rem;
   border-radius: 8px;
   transition: 0.2s ease;
+  color: #f0f0e6;
 }
 
 project-card:hover {
