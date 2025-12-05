@@ -78,4 +78,20 @@ footer {
   border-top: 1px solid #ccc;
   color: #0a2342;
 }
+.image-text-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;        /* space between image and text */
+  margin: 2rem 0;
+}
+
+.image-text-row img {
+  width: 40%;       /* adjust size */
+  border-radius: 6px;
+}
+
+.image-text-row p {
+  width: 60%;       /* text takes remaining width */
+}
+
 
