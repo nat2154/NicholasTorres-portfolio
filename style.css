@@ -3,14 +3,22 @@
   --navy-light: #122b45;
   --offwhite: #f2f2f2;
   --text-navy: #0a2342;
+/* Global text adjustments */
+* {
+  letter-spacing: 0.5px;
 }
 
 body {
   margin: 0;
-  font-family: "JetBrains Mono", monospace;
-  background: white;        /* Welcome section + rest of page is white */
-  color: #0a2342;           /* Navy text */
+  font-family: "JetBrains Monosapce", monospace;
+  background: white;
+  color: #0a2342;
+
+  font-size: 18px;   
+  line-height: 1.6;  
 }
+
+
 
 
 header h1,
