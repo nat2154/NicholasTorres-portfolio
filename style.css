@@ -18,13 +18,14 @@ header p {
   text-align: left;   /* ensures your name and subtitle align left */
 }
 
-header {
-  background: #1a2d4d;      /* lighter navy */
-  color: #f2f2f2;
-  padding: 2rem 8%;
-  text-align: left;
-  border-bottom: 2px solid #122b45;
+header nav a {
+  color: #f2f2f2;   /* FORCE off-white links */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
+
+
 
 
 
@@ -44,19 +45,25 @@ nav a:hover {
 }
 
 h1, h2, h3, h4 {
-  color: #ffffff;      /* or #f0f0e6 if you want off-white */
+  color: #0a2342;   /* navy blue — matches paragraph text */
   font-weight: 700;
-  text-align: left;     /* ensure heading text stays left-aligned */
+}
+.project-card h3,
+.project-card h2,
+.project-card h4 {
+  color: #f2f2f2;   /* off-white headings ONLY inside project bubbles */
 }
 
 
+
 .project-card {
-  background: #122b45;   /* Dark navy card */
-  color: #f2f2f2;        /* Off-white text */
+  background: #1a2d4d;    /* SAME lighter navy as header */
+  color: #f2f2f2;         /* off-white text inside bubble */
   border-radius: 10px;
   padding: 2rem;
   margin: 2rem 0;
 }
+
 
 
 project-card:hover {
