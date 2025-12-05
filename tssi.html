@@ -58,13 +58,28 @@ The Tractive System Status Indicator (TSSI) is the primary visual safety device 
       </p>
   
   <h2>Challenges</h2>
-  <p>
-    (Paste challenges section)
-  </p>
+    <h3>
+      Late-Stage Design Redirection: Surface-Area Minimization
+    </h3>
+      <p>
+      Late in the design process, one of the project leads requested a substantially smaller TSSI footprint. This introduced a significant design pivot requiring rapid changes to the enclosure geometry. I compressed the internal packaging without compromising fit, recalculated gasket interfaces, reshaped the top enclosure for improved aerodynamic behavior, and revalidated clearances with the welded chassis tabs. This redesign had to be completed quickly while still maintaining structural integrity and waterproofing.
+      </p>
+    <h3>
+      Voltage Standard Changes from the Low-Voltage Team
+    </h3>
+      <p>
+      The LV team’s change from a 12 V to a 24 V standard—and their subsequent uncertainty about that change—caused challenges throughout development. It forced redesigns of wiring exits and strain-relief features, required verification of LED driver compatibility, and prompted reevaluation of heat output and internal routing. It also delayed the final round of waterproof testing, as seal reliability could not be confirmed until electrical behavior was fully understood. Despite these complications, I maintained enough flexibility in the design so that it could accommodate either voltage configuration.
+      </p>
+    <h3>
+      Waterproofing Complexity
+    </h3>
+      <p>
+        Achieving a fully waterproof design proved to be one of the most technically demanding aspects of the project. Perfecting the O-ring compression required multiple prototype cycles and precise iteration of groove dimensions. Resin-printed parts demand extremely tight tolerance control, meaning even small deviations affected how the O-ring seated within its gland. Ensuring consistent compression, reliable sealing, and manufacturability across prints became a central engineering challenge.
+      </p>
 
   <h2>Improvements</h2>
   <p>
-    (Paste improvements section)
+Future iterations of the TSSI could benefit from several key advancements. Introducing modular light cartridges would allow the lighting modules to slide into the main housing, simplifying service and replacement while maintaining waterproofing. Integrating a dedicated PCB inside the enclosure—protected by conformal coating—would significantly reduce wiring complexity and improve reliability. Establishing a unified voltage standard with the LV team earlier in the season would eliminate the redesign cycles caused by electrical uncertainty. Additionally, replacing the current bulkhead cable gland with an overmolded resin cable exit could further enhance waterproofing robustness and reduce external hardware. Finally, running a small CFD study could help refine the outer surface curvature to minimize drag and wake formation at the top of the roll hoop, guiding future aerodynamic optimization.
   </p>
 
 </section>
