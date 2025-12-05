@@ -4,6 +4,10 @@ body {
   background: #ffffff;
   color: #0a0a0a;
 }
+header h1,
+header p {
+  text-align: left;   /* ensures your name and subtitle align left */
+}
 
 header {
   padding: 2rem 10%;
