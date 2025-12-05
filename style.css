@@ -4,6 +4,13 @@ body {
   background: #ffffff;
   color: #0a0a0a;
 }
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  background: #1a2740;      /* light navy blue */
+  color: #f0f0e6;           /* off-white text */
+}
+
 header h1,
 header p {
   text-align: left;   /* ensures your name and subtitle align left */
