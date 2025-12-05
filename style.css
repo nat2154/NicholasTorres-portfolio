@@ -80,18 +80,18 @@ footer {
 }
 .image-text-row {
   display: flex;
-  align-items: center;
-  gap: 20px;        /* space between image and text */
-  margin: 2rem 0;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 2rem 40px; /* lines up with your h3 indent */
 }
 
 .image-text-row img {
-  width: 40%;       /* adjust size */
+  width: 25%;        /* same size you were using before */
   border-radius: 6px;
 }
 
 .image-text-row p {
-  width: 60%;       /* text takes remaining width */
+  margin: 0;         /* remove extra top margin */
 }
 
 
