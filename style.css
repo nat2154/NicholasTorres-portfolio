@@ -99,3 +99,23 @@ footer {
   height: auto;
   border-radius: 6px;
 }
+/* Fix alignment for the image + text row */
+.image-text-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 2rem 0;
+}
+
+.image-text-row .text-block {
+  flex: 1;
+  padding-left: 40px;  /* aligns left edge with other headings & paragraphs */
+}
+
+.image-text-row img {
+  width: 30%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 6px;
+}
+
