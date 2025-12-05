@@ -1,10 +1,17 @@
+:root {
+  --navy: #0b1e35;
+  --navy-light: #122b45;
+  --offwhite: #f2f2f2;
+  --text-navy: #0a2342;
+}
 
 body {
   margin: 0;
   font-family: "JetBrains Mono", monospace;
-  background: #1a2740;      /* light navy blue */
-  color: #f0f0e6;           /* off-white text */
+  background: white;        /* Welcome section + rest of page is white */
+  color: #0a2342;           /* Navy text */
 }
+
 
 header h1,
 header p {
@@ -12,18 +19,21 @@ header p {
 }
 
 header {
-  padding: 2rem 10%;
-  text-align: left;      /* move all header content left */
-  border-bottom: 2px solid #2c3a55;
+  background: #0b1e35;     /* Dark navy background ONLY for top */
+  color: #f2f2f2;          /* Off-white text */
+  padding: 2rem 8%;
+  text-align: left;        /* Move name + subtitle to left */
+  border-bottom: 2px solid #122b45;
 }
 
 
-nav {
-  display: flex;
-  justify-content: flex-start;
-  gap: 2.5rem;
-  margin-top: 1rem;
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f2f2f2;      /* Off-white links to match top section */
+  font-size: 1.25rem;
 }
+
 
 
 nav a {
@@ -49,14 +59,13 @@ h1, h2, h3, h4 {
 
 
 .project-card {
-  border: 1px solid #2c3a55; 
-  background: #22304c;
+  background: #122b45;   /* Dark navy card */
+  color: #f2f2f2;        /* Off-white text */
+  border-radius: 10px;
   padding: 2rem;
-  margin-bottom: 3rem;
-  border-radius: 8px;
-  transition: 0.2s ease;
-  color: #f0f0e6;
+  margin: 2rem 0;
 }
+
 
 project-card:hover {
   transform: translateY(-5px);
