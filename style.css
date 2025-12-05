@@ -6,10 +6,11 @@ body {
 }
 
 header {
-  padding: 2rem;
-  text-align: center;
-  border-bottom: 2px solid #0a2342;
+  padding: 2rem 10%;
+  text-align: left;      /* move all header content left */
+  border-bottom: 2px solid #2c3a55;
 }
+
 
 nav {
   display: flex;
