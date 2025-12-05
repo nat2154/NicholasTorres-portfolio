@@ -40,6 +40,18 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+/* ------- ADDED INDENT FOR H3 ------- */
+h3 {
+  margin-left: 20px;     /* <<< adjust value as needed */
+}
+
+/* Optional: paragraphs directly under h3 match indentation */
+h3 + p {
+  margin-left: 20px;
+}
+
+/* ----------------------------------- */
+
 .project-card {
   border: 1px solid #d0d0d0;
   padding: 2rem;
@@ -48,7 +60,7 @@ h1, h2, h3, h4 {
   transition: 0.2s ease;
 }
 
-.project-card:hover {
+project-card:hover {
   transform: translateY(-5px);
 }
 
@@ -56,7 +68,7 @@ h1, h2, h3, h4 {
   width: 60%;
   display: block;
   margin: 0 auto 2rem auto;
-  order-radius: 6px;
+  border-radius: 6px;
 }
 
 footer {
@@ -66,3 +78,4 @@ footer {
   border-top: 1px solid #ccc;
   color: #0a2342;
 }
+
