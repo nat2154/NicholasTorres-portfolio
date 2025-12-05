@@ -13,8 +13,8 @@ body {
   font-family: 'Poppins', sans-serif;  background: white;
   color: #0a2342;
 
-  font-size: 18px;   
-  line-height: 1.6;  
+  font-size: 20px;   
+  line-height: 1.7;  
 }
 header {
   background: #1a2d4d;    /* light navy */
@@ -32,7 +32,7 @@ header p {
 }
 
 nav a {
-    font-size: 1.15rem;          /* slightly bigger */
+    font-size: 1.25rem;          /* slightly bigger */
     font-weight: 700;            /* bold */
     color: #D3D7DC !important;   /* light gray */
     margin-right: 26px;          /* increases spacing between each link */
