@@ -19,45 +19,45 @@ n <!DOCTYPE html>
 
 <section class="section">
 
-  <img src="images/dashboard1.png" class="project-img" />
+  <img src="images/CT1.png" class="project-img" />
 
   <h3>Overview</h3>
-  <p>I led the redesign of the driver dashboard enclosure, which houses the primary low-voltage interface including the MoTeC display, safety-critical indicator lights (BMS, IMD, BSPD), torque and traction LEDs, the RTD button, switches, and multiple rotary dials. The project addressed major weaknesses from prior seasons by improving visibility and ergonomics, replacing temporary mounting with rigid chassis tabs, adding structural reinforcement to withstand E-brake loads, and fully waterproofing the enclosure while expanding capacity for a significantly larger component set.
+  <p>Designed a purely mechanical children’s counting toy that physically demonstrates addition and subtraction using marbles, without electronics or screens. The goal was to make arithmetic visible and intuitive by showing quantities combine and decrease through controlled mechanical motion, while creating a closed-loop system that supports repeated use without loose parts.
 </p>
 
-  <h3>Role & Ownership</h3>
-      <p>I owned the full mechanical design of the dashboard enclosure, from requirements definition and component packaging through CAD, structural reinforcement, sealing strategy, and material selection. I coordinated closely with the low-voltage electrical, chassis, and ergonomics teams to resolve interface, mounting, and visibility constraints.
+  <h3>Concept & User Interaction</h3>
+      <p>The toy operates using three connected chambers. Two outer chambers store marbles representing input values, and a central chamber displays the result. Pressing a button on either side releases marbles from that chamber, which roll along guided paths and collect in the center to demonstrate addition. Subtraction is performed by pressing a separate control that removes marbles from the center chamber one at a time, allowing the child to see the quantity decrease directly. A reset mechanism clears the center chamber and lifts the marbles back into the storage chambers, completing a fully self-contained cycle.
       </p>
  <div class="image-text-row">
   <div class="text-block">
-    <h3>Design & Packaging</h3>
+    <h3>Mechanical Design & CAD Strategy</h3>
     <p>
-      I defined packaging and ergonomic requirements by inventorying all required components and designing around driver sightlines, reach accessibility, cable routing, and enclosure volume. The MoTeC display presented the largest constraint due to its footprint and required visibility behind the steering wheel, driving multiple layout iterations. I developed the enclosure entirely in SolidWorks, iteratively refining the front panel geometry and component placement to ensure clean symmetry, full visibility, and intuitive driver interaction while maintaining a compact form factor.
-    </p>
+The entire CAD model was built around a single driving dimension—the marble diameter—so all openings, ramps, gates, and elevator pockets scale consistently if the marble size changes. Flow control is handled through mechanical geometry rather than electronics or software: sliding gate plates uncover marble-sized openings, internal walls keep quantities separated until triggered, and geometric stops define motion limits without relying on mate constraints. Symmetry tools and mirrored features were used to maintain identical behavior on both sides and reduce rework.
+  </p>
   </div>
-  <img src="images/dashboard2.png" alt="Dashboard front panel">
+  <img src="CT2.png" alt="Dashboard front panel">
 </div>
 
 <div class="image-text-row">
   <div class="text-block">
-    <h3>Structural Reinforcement & Testing (FEA)</h3>
-      <p>Because the E-brake transmits load directly into the dashboard, I designed three internal cylindrical support columns that transfer braking forces from the front panel into the mounting interface, reducing localized stress and panel deformation. I validated this design using FEA with fixed supports at the mounting screw locations and an applied 300 N braking load. The analysis showed a factor of safety greater than 3.5, confirming that the enclosure could safely withstand aggressive driver inputs without cracking or excessive deflection.</p>
+    <h3>Subsystem Design Highlights</h3>
+      <p>A one-marble elevator system was designed to reset the toy without manual handling. The platform includes a dedicated marble pocket and a blocking wall that prevents multiple marbles from entering, acting as a mechanical check valve. Thin internal dividers separate left and right channels while preserving stiffness, and ramps and guide walls ensure predictable marble motion throughout the system.</p>
   </div>
     <img src="images/dashboardfea.png" alt="Dashboard fea">
 </div>   
   <img src="images/dashboardfeaiso.png" class="project-img" />
 
-    <h3>Waterproofing & Manufacturing</h3>
-      <p>To protect electronics from water and debris, I incorporated a full perimeter gasket groove between the enclosure and lid and designed localized gasket seats around individual lights and switches for use with custom-cut gasket sheets. Based on sponsor support, the enclosure was transitioned to a carbon-fiber-reinforced resin material, improving stiffness, impact resistance, dimensional stability, and inherent resistance to water ingress compared to prior designs.</p>
+    <h3>Subsystem Design Highlights </h3>
+      <p>A one-marble elevator system was designed to reset the toy without manual handling. The platform includes a dedicated marble pocket and a blocking wall that prevents multiple marbles from entering, acting as a mechanical check valve. Thin internal dividers separate left and right channels while preserving stiffness, and ramps and guide walls ensure predictable marble motion throughout the system.</p>
   
- <h3>Challenges & Tradeoffs</h3>
+ <h3>Challenges & Engineering Tradeoffs</h3>
 
   <p>
-    The MoTeC’s size and fixed visibility requirements made it difficult to position surrounding indicators without obstructing sightlines or exceeding the allowable dashboard envelope, requiring multiple layout iterations. Mid-season voltage changes from the low-voltage team (12 V → 24 V → 12 V) delayed finalization of cutouts and connector spacing, while dependencies on the final steering wheel geometry required frequent updates to display angle and button placement. As the interface expanded, maintaining stiffness and vibration resistance without excessive mass required careful use of internal ribbing, support columns, and material selection.
-  </p>
+Preventing jamming and marble escape was the primary challenge. Instead of relying on extremely tight tolerances, the design prioritizes containment through retaining lips, sidewalls, ribs, and controlled ramp geometry. Ramp angles were iterated to balance smooth motion without bouncing or stalling. Wall thicknesses were tuned to maintain durability while preserving space for internal channels. Several components were intentionally separated into multiple bodies to reflect realistic fabrication, assembly, and animation rather than idealized single-part geometry.
+</p>
   
-  <h3> Results & Future Improvements</h3>
-  <p>The final design delivered a rigid, fully waterproof dashboard enclosure with improved visibility, ergonomic reach, and structural integrity under E-brake loading, while supporting a much higher component count than previous seasons. Future improvements include molded wiring channels or trays to improve serviceability, a modular or removable front panel for easier layout changes, metal threaded inserts for durability during repeated servicing, and earlier cross-team interface lock-in to reduce design churn.</p>
+  <h3> Results & Takeaways</h3>
+  <p>The final design clearly communicates the logic of addition and subtraction through physical motion, maintains reliable marble control, and reflects practical mechanical design principles focused on durability, clarity, and repeatable operation. The project demonstrates parametric CAD modeling, mechanism-driven logic, tolerance-aware design, and user-centered mechanical problem solving.</p>
   
 </section>
 
