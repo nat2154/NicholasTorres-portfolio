@@ -20,67 +20,35 @@
 
   <img src="images/tssi1.png" class="project-img" />
 
-  <h2>Problem Statement & Goal</h2>
+<h3>Overview</h3>
   <p>
-The Tractive System Status Indicator (TSSI) is the primary visual safety device that communicates the high-voltage (HV) state of the tractive system to the driver, team members, and event officials. It must clearly indicate when the tractive system is energized, precharging, or safe, and is required by FSAE Electric rules as a core safety component.  </p>
-<p>This year, the Low-Voltage Enclosures team was tasked with completely redesigning the TSSI to address several issues with the previous version—including waterproofing failures, rule changes regarding mounting, and overall improvements to reliability, manufacturability, and aerodynamic cleanliness. The goal was to deliver a fully waterproof, compact, resin-printed TSSI that meets rule requirements, fits on welded chassis tabs, and withstands real competition conditions.</p>
-  <h2>Procedure / Workflow</h2>
-    <h3>
-    Establishing Requirements
-    </h3>
-      <p>
-      I began by reviewing the FSAE rules governing TSSI brightness, visibility, mounting, and electrical interfacing to ensure full compliance before any modeling work started. From there, I analyzed the shortcomings of last year’s TSSI—specifically water ingress, the instability of clamp-style mounting, excessive surface area, and tolerance issues caused by FDM printing. I also identified internal constraints that would influence the design direction, including the electrical team’s transition to a 24 V standard for LV lights, the team’s shift toward resin-based manufacturing, and the fixed placement of welded chassis mounting tabs. Together, these external rules and internal constraints shaped the initial set of design requirements.
-      </p>
+I led the mechanical redesign of the Tractive System Status Indicator (TSSI), a rule-critical safety device that communicates the high-voltage state of the vehicle to the driver, team members, and event officials. The project addressed prior failures in waterproofing, mounting stability, and manufacturability while adapting to updated FSAE Electric rules that prohibited clamp mounting. The goal was to deliver a compact, fully waterproof, resin-printed enclosure that met brightness and visibility requirements, mounted to welded chassis tabs, and withstood real competition conditions.
+  </p>
   
+  <h3>Role & Ownership</h3>
+  <p>
+    I owned the full mechanical design of the TSSI enclosure, defining requirements from FSAE rules and prior-year failure modes. My responsibilities included sealing strategy, enclosure CAD, manufacturing process selection, and coordination with the chassis and low-voltage electrical teams.
+  </p>
+
+ 
     <h3>
-    Waterproofing & Gasket Optimization
+Design & Engineering Decisions
     </h3>
       <p>
-      To develop a fully waterproof system, I created multiple enclosure prototypes with varied gasket groove depths and widths, testing each design to determine how compression levels affected sealing reliability. After repeated iterations, I finalized a configuration using 15% compression on a ⅛-inch X-ring profile O-ring for the main enclosure seal. For the LED lights themselves, I produced custom-cut gasket sheets that matched their exact geometry and mounting screw patterns. These tailored gaskets enabled precise, consistent sealing at all light interfaces and improved long-term protection against water ingress.
+To achieve reliable waterproofing, I designed an O-ring–sealed enclosure using a ⅛-inch X-ring at approximately 15% compression and created custom-cut gaskets for each LED interface to ensure consistent sealing. I selected SLA/MSLA resin printing for its near-zero porosity and tight tolerance control, enabling reliable O-ring glands and improved dimensional accuracy compared to FDM printing. With clamp mounting no longer allowed, I collaborated with the chassis team to design welded mounting tabs and positioned the TSSI near the top of the roll hoop while maintaining wiring clearances and structural integrity. To improve packaging and reduce drag, I selected compact DOT/SAE-certified light modules and minimized the enclosure’s external surface area.
       </p>
     <h3>
-     Material & Manufacturing Process Selection 
+Challenges & Tradeoffs
     </h3>
       <p>
-        Selecting the appropriate manufacturing process was essential to achieving both strength and waterproofing. I chose resin-based SLA/MSLA printing for the TSSI housing because of its near-zero porosity, consistent wall thickness, and superior tolerance control compared to FDM. These characteristics made it possible to design tight, reliable O-ring glands, achieve crisp edges around cutouts, and produce a fully waterproof enclosure. Resin printing also improved overall dimensional accuracy, allowing the design to meet the tight sealing requirements demanded by the environment.
-      </p>
+Late in the design process, the enclosure footprint was significantly reduced at the request of project leadership, requiring rapid internal repackaging, gasket revalidation, and geometry refinement without compromising waterproofing or fit. In parallel, uncertainty surrounding the low-voltage system’s transition from 12 V to 24 V forced redesigns of wiring exits and strain-relief features and delayed final waterproof validation.      </p>
     <h3>
-      Rule-Driven Mounting Redesign
+     Results & Future Improvements
     </h3>
       <p>
-        With new FSAE rules prohibiting clamp mounting on the roll hoop, I rethought the mounting approach entirely. I modeled the TSSI in SolidWorks and positioned it near the top of the roll hoop, then collaborated with the chassis team to design welded mounting tabs that met rule requirements while avoiding interference with wiring paths, screw clearances, and surrounding components. This process ensured a rule-compliant, structurally reliable mounting system that integrated cleanly with the existing chassis architecture.
-      </p>
-    <h3>
-      Surface-Area Reduction & Aerodynamic Cleanup
-    </h3>
-      <p>
-        To reduce aerodynamic drag and create a more compact design, I researched DOT/SAE-certified lights that met the minimum luminous-area requirements without unnecessary size. Using these, I iteratively repositioned the light modules and trimmed excess geometry to minimize the enclosure’s external surface area. This not only decreased the TSSI’s frontal area—improving airflow and reducing pressure buildup—but also resulted in a cleaner, more efficient overall form factor.
-      </p>
-  
-  <h2>Challenges</h2>
-    <h3>
-      Late-Stage Design Redirection: Surface-Area Minimization
-    </h3>
-      <p>
-      Late in the design process, one of the project leads requested a substantially smaller TSSI footprint. This introduced a significant design pivot requiring rapid changes to the enclosure geometry. I compressed the internal packaging without compromising fit, recalculated gasket interfaces, reshaped the top enclosure for improved aerodynamic behavior, and revalidated clearances with the welded chassis tabs. This redesign had to be completed quickly while still maintaining structural integrity and waterproofing.
-      </p>
-    <h3>
-      Voltage Standard Changes from the Low-Voltage Team
-    </h3>
-      <p>
-      The LV team’s change from a 12 V to a 24 V standard—and their subsequent uncertainty about that change—caused challenges throughout development. It forced redesigns of wiring exits and strain-relief features, required verification of LED driver compatibility, and prompted reevaluation of heat output and internal routing. It also delayed the final round of waterproof testing, as seal reliability could not be confirmed until electrical behavior was fully understood. Despite these complications, I maintained enough flexibility in the design so that it could accommodate either voltage configuration.
-      </p>
-    <h3>
-      Waterproofing Complexity
-    </h3>
-      <p>
-        Achieving a fully waterproof design proved to be one of the most technically demanding aspects of the project. Perfecting the O-ring compression required multiple prototype cycles and precise iteration of groove dimensions. Resin-printed parts demand extremely tight tolerance control, meaning even small deviations affected how the O-ring seated within its gland. Ensuring consistent compression, reliable sealing, and manufacturability across prints became a central engineering challenge.
+The final design delivered a rule-compliant, fully waterproof TSSI with improved structural stability, reduced frontal area, and flexibility to accommodate evolving electrical standards. Future iterations could improve serviceability and reliability through modular light cartridges, an integrated conformal-coated PCB, overmolded cable exits, and CFD-guided aerodynamic refinement.      
       </p>
 
-  <h2>Improvements</h2>
-  <p>
-Future iterations of the TSSI could benefit from several key advancements. Introducing modular light cartridges would allow the lighting modules to slide into the main housing, simplifying service and replacement while maintaining waterproofing. Integrating a dedicated PCB inside the enclosure—protected by conformal coating—would significantly reduce wiring complexity and improve reliability. Establishing a unified voltage standard with the LV team earlier in the season would eliminate the redesign cycles caused by electrical uncertainty. Additionally, replacing the current bulkhead cable gland with an overmolded resin cable exit could further enhance waterproofing robustness and reduce external hardware. Finally, running a small CFD study could help refine the outer surface curvature to minimize drag and wake formation at the top of the roll hoop, guiding future aerodynamic optimization.
-  </p>
 <img src="images/tssi2.png" class="project-img" />
 
 </section>
