@@ -1,0 +1,69 @@
+n <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Children's Addition and Subtraction Toy | Nicholas Torres</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+  <h1>Children's Counting and Subtraction Toy</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+</header>
+
+<section class="section">
+
+  <img src="images/dashboard1.png" class="project-img" />
+
+  <h3>Overview</h3>
+  <p>I led the redesign of the driver dashboard enclosure, which houses the primary low-voltage interface including the MoTeC display, safety-critical indicator lights (BMS, IMD, BSPD), torque and traction LEDs, the RTD button, switches, and multiple rotary dials. The project addressed major weaknesses from prior seasons by improving visibility and ergonomics, replacing temporary mounting with rigid chassis tabs, adding structural reinforcement to withstand E-brake loads, and fully waterproofing the enclosure while expanding capacity for a significantly larger component set.
+</p>
+
+  <h3>Role & Ownership</h3>
+      <p>I owned the full mechanical design of the dashboard enclosure, from requirements definition and component packaging through CAD, structural reinforcement, sealing strategy, and material selection. I coordinated closely with the low-voltage electrical, chassis, and ergonomics teams to resolve interface, mounting, and visibility constraints.
+      </p>
+ <div class="image-text-row">
+  <div class="text-block">
+    <h3>Design & Packaging</h3>
+    <p>
+      I defined packaging and ergonomic requirements by inventorying all required components and designing around driver sightlines, reach accessibility, cable routing, and enclosure volume. The MoTeC display presented the largest constraint due to its footprint and required visibility behind the steering wheel, driving multiple layout iterations. I developed the enclosure entirely in SolidWorks, iteratively refining the front panel geometry and component placement to ensure clean symmetry, full visibility, and intuitive driver interaction while maintaining a compact form factor.
+    </p>
+  </div>
+  <img src="images/dashboard2.png" alt="Dashboard front panel">
+</div>
+
+<div class="image-text-row">
+  <div class="text-block">
+    <h3>Structural Reinforcement & Testing (FEA)</h3>
+      <p>Because the E-brake transmits load directly into the dashboard, I designed three internal cylindrical support columns that transfer braking forces from the front panel into the mounting interface, reducing localized stress and panel deformation. I validated this design using FEA with fixed supports at the mounting screw locations and an applied 300 N braking load. The analysis showed a factor of safety greater than 3.5, confirming that the enclosure could safely withstand aggressive driver inputs without cracking or excessive deflection.</p>
+  </div>
+    <img src="images/dashboardfea.png" alt="Dashboard fea">
+</div>   
+  <img src="images/dashboardfeaiso.png" class="project-img" />
+
+    <h3>Waterproofing & Manufacturing</h3>
+      <p>To protect electronics from water and debris, I incorporated a full perimeter gasket groove between the enclosure and lid and designed localized gasket seats around individual lights and switches for use with custom-cut gasket sheets. Based on sponsor support, the enclosure was transitioned to a carbon-fiber-reinforced resin material, improving stiffness, impact resistance, dimensional stability, and inherent resistance to water ingress compared to prior designs.</p>
+  
+ <h3>Challenges & Tradeoffs</h3>
+
+  <p>
+    The MoTeC’s size and fixed visibility requirements made it difficult to position surrounding indicators without obstructing sightlines or exceeding the allowable dashboard envelope, requiring multiple layout iterations. Mid-season voltage changes from the low-voltage team (12 V → 24 V → 12 V) delayed finalization of cutouts and connector spacing, while dependencies on the final steering wheel geometry required frequent updates to display angle and button placement. As the interface expanded, maintaining stiffness and vibration resistance without excessive mass required careful use of internal ribbing, support columns, and material selection.
+  </p>
+  
+  <h3> Results & Future Improvements</h3>
+  <p>The final design delivered a rigid, fully waterproof dashboard enclosure with improved visibility, ergonomic reach, and structural integrity under E-brake loading, while supporting a much higher component count than previous seasons. Future improvements include molded wiring channels or trays to improve serviceability, a modular or removable front panel for easier layout changes, metal threaded inserts for durability during repeated servicing, and earlier cross-team interface lock-in to reduce design churn.</p>
+  
+</section>
+
+<footer>
+  © 2025 Nicholas Torres
+</footer>
+
+</body>
+</html>
