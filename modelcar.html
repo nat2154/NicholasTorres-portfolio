@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Model Car Manufacturing | Nicholas Torres</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+  <h1>Model Car Manufacturing Plan – 1921 Duesenberg Grand Prix</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+</header>
+
+<section class="section">
+
+  <img src="images/modelcar1.png" class="project-img" />
+
+  <h3>Overview</h3>
+  <p>I developed a complete manufacturing plan for a scaled 1921 Duesenberg Grand Prix model car, treating it as a production product at 1,200 units per year rather than a one-off prototype. The plan covers process selection for every component, tooling design and core casting calculations for the aluminum body, a CNC machining plan for the injection mold, injection molding system design with DFM analysis, and assembly line planning with takt time, labor, and cost modeling.</p>
+
+  <h3>Process Selection & Part Breakdown</h3>
+  <p>I decomposed the car into parts by function — cosmetic body, structural chassis, rolling wheels, and joining hardware — and matched each to an appropriate process using decision matrices: sand-cast A356 aluminum for the body, injection-molded wheels from a CNC-machined aluminum mold, stamped sheet steel for the chassis, cut steel rod for the axles, and 3D printing for the low-load cockpit insert. Each selection balanced production quantity, tooling cost, surface finish, and geometry.</p>
+
+  <div class="image-text-row">
+    <div class="text-block">
+      <h3>Casting & Tooling Analysis</h3>
+      <p>For the A356 body casting, I sized the full gating system from first principles: riser dimensions using Chvorinov's rule and casting modulus, sprue area from Torricelli flow, a 1:2:2 gating ratio, and gate velocity verification against a 0.8 m/s limit. A Reynolds number check on the runner identified turbulent flow, informing recommendations for rounded corners and a sprue well. Pattern dimensions included 1.3% shrinkage compensation and 3–5° draft.</p>
+    </div>
+    <img src="images/modelcar2.png" alt="Manufacturing process flow">
+  </div>
+
+  <h3>Injection Molding & DFM</h3>
+  <p>I designed a single-cavity, two-plate wheel mold with a flat midplane parting line, hub-side gating to hide the gate vestige, venting at end-of-fill, and shrinkage-compensated cavity dimensions for both PP and ABS. Core process calculations covered shot volume and mass, clamping force (5.86 tons), and cooling time, leading to machine selection and a 35 s cycle estimate. I also developed the CAM machining plan for the mold halves — adaptive roughing through fine detail finishing with ball end mills, plus spot and locator-pin drilling — with a programmed runtime of 15.6 minutes.</p>
+
+  <h3>Assembly & Production Planning</h3>
+  <p>I built an assembly precedence diagram and compared a one-worker cycle time (325 s) against the 288 s takt time required for 500 units per week, showing a single station falls short. A two-station layout balanced the work to a 175 s bottleneck, meeting demand with two operators at $3.20 labor cost per car. Supporting analyses included a tolerance stack-up on the wheel-to-axle fit and body-to-chassis alignment, an axle bending check, and a cost model showing tooling amortization dominating at low volume and labor dominating at 1,000 units.</p>
+
+  <h3>Takeaways</h3>
+  <p>This project connected design intent to production reality: the same part can succeed or fail based on gate placement, shrinkage compensation, draft, and fixture design. It demonstrates process selection, tooling engineering, DFM, and production planning — the considerations that turn a CAD model into a manufacturable product.</p>
+
+</section>
+
+<footer>
+  © 2025 Nicholas Torres
+</footer>
+
+</body>
+</html>
